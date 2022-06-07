@@ -18,7 +18,8 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
 
@@ -41,7 +42,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top"><span class="text-muted">eNe</span>+</a>
@@ -76,7 +78,7 @@
                         <a class="page-scroll" href="contacto.html">Contacto</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="botonTurnos">Turno</a>
+                        <a class="page-scroll" id="botonTurnos" style="cursor: pointer;">Turno</a>
                     </li>
                 </ul>
             </div>
@@ -84,6 +86,12 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <div class="turnos display-none" id="modalTurnos">
+        <input type="password" id="passTurnos">
+        <p id="passError" class="display-none">Contraseña inválida</p>
+        <button id="checkPassTurno">Comprobar</button>
+    </div>
 
     <!-- Header -->
     <header>
@@ -107,12 +115,18 @@
             </div>
             <div class="row text-left">
                 <div class="col-md-6">
-                    <p>Las licencias laborales por causas psiquiátricas representan un importante porcentaje del ausentismo en las empresas ya que en términos generales se prolongan más tiempo que otras especialidades.<br><br></p>
-                    <p>Datos estadísticos propios revelan que cerca del 80% de las licencias por salud mental no están justiﬁcadas y responden a diversos conﬂictos laborales.</p>
+                    <p>Las licencias laborales por causas psiquiátricas representan un importante porcentaje del
+                        ausentismo en las empresas ya que en términos generales se prolongan más tiempo que otras
+                        especialidades.<br><br></p>
+                    <p>Datos estadísticos propios revelan que cerca del 80% de las licencias por salud mental no están
+                        justiﬁcadas y responden a diversos conﬂictos laborales.</p>
                 </div>
                 <div class="col-md-6">
-                    <p>Por sus características particulares, este tipo de licencias requieren de ciertos procedimientos de evaluación que logren cuantiﬁcar el malestar que aqueja al empleado y que pueda determinar certeramente la existencia de capacidad o incapacidad laboral.<br><br></p>
-                    <p>Para lograr resultados determinantes es necesario personal altamente capacitado y el uso de herramientas de evaluación cientíﬁcas y normatizadas para la población local.</p>
+                    <p>Por sus características particulares, este tipo de licencias requieren de ciertos procedimientos
+                        de evaluación que logren cuantiﬁcar el malestar que aqueja al empleado y que pueda determinar
+                        certeramente la existencia de capacidad o incapacidad laboral.<br><br></p>
+                    <p>Para lograr resultados determinantes es necesario personal altamente capacitado y el uso de
+                        herramientas de evaluación cientíﬁcas y normatizadas para la población local.</p>
                 </div>
             </div>
         </div>
@@ -158,13 +172,13 @@
                         </li>
                         <li class="timeline-inverted">
                             <a href="contacto.html">
-                              <div class="timeline-image">
-                                <h4>¿Cómo
-                                  <br>podemos
-                                  <br>ayudarlo?
-                                </h4>
-                            </div>
-                          </a>
+                                <div class="timeline-image">
+                                    <h4>¿Cómo
+                                        <br>podemos
+                                        <br>ayudarlo?
+                                    </h4>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -183,9 +197,14 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                  <p class="text-muted">En <strong>eNe </strong>nos dedicamos exclusivamente al control de las licencias laborales de causa psiquiátrico-psicológicas. Somos un grupo interdisciplinario de profesionales de la salud mental (médicos legistas, laborales, psiquiatras, psicólogos y neuropsicólogos) con experiencia en el campo forense y laboral, capaces de realizar de manera ética, responsable y profesional evaluaciones que valoren la capacidad laboral real de los empleados.</p>
-                  <br>
-                  <a href="#portfolioModal1" class="btn btn-ol" data-toggle="modal">Acerca de su director</a>
+                    <p class="text-muted">En <strong>eNe </strong>nos dedicamos exclusivamente al control de las
+                        licencias laborales de causa psiquiátrico-psicológicas. Somos un grupo interdisciplinario de
+                        profesionales de la salud mental (médicos legistas, laborales, psiquiatras, psicólogos y
+                        neuropsicólogos) con experiencia en el campo forense y laboral, capaces de realizar de manera
+                        ética, responsable y profesional evaluaciones que valoren la capacidad laboral real de los
+                        empleados.</p>
+                    <br>
+                    <a href="#portfolioModal1" class="btn btn-ol" data-toggle="modal">Acerca de su director</a>
                 </div>
             </div>
         </div>
@@ -194,12 +213,12 @@
     <!-- Clients Aside -->
     <aside class="clients">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3 class="section-subheading text-muted">Importantes empresas ya confían en nuestros servicios</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="section-subheading text-muted">Importantes empresas ya confían en nuestros servicios</h3>
+                </div>
+                <br>
             </div>
-            <br>
-          </div>
             <div class="row">
                 <div class="col-xs-6 col-sm-3">
                     <a href="#">
@@ -224,36 +243,39 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                  <a href="clientes.html" class="btn btn-ol">Conozca más de nuestros clientes</a>
+                    <a href="clientes.html" class="btn btn-ol">Conozca más de nuestros clientes</a>
                 </div>
             </div>
         </div>
     </aside>
 
-        <!-- Dónde Section -->
-        <section id="donde" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Dónde estamos</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <p class="text-muted">Poseemos una ubicación privilegiada con un excelente acceso en,<br>Av. Congreso 3219 C.A.B.A </p>
-                  </div>
-                  <div class="col-md-4">
-                    <p class="text-muted">info@eneconsultora.com<br>Tel / WhatsApp: +54 9 11 3869-5047</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7673703692794!2d-58.47259918423793!3d-34.55944496266493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb686eb47df5f%3A0xe028623101ac5b46!2sAv.%20Congreso%203219%2C%20C1428BWA%20CABA!5e0!3m2!1ses-419!2sar!4v1634590603246!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
+    <!-- Dónde Section -->
+    <section id="donde" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Dónde estamos</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-muted">Poseemos una ubicación privilegiada con un excelente acceso en,<br>Av.
+                        Congreso 3219 C.A.B.A </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-muted">info@eneconsultora.com<br>Tel / WhatsApp: +54 9 11 3869-5047</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7673703692794!2d-58.47259918423793!3d-34.55944496266493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb686eb47df5f%3A0xe028623101ac5b46!2sAv.%20Congreso%203219%2C%20C1428BWA%20CABA!5e0!3m2!1ses-419!2sar!4v1634590603246!5m2!1ses-419!2sar"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -267,7 +289,8 @@
                         </li>
                         <li><a href="https://www.facebook.com/eneconsultora/"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/company/ene-consultora?trk=top_nav_home"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.linkedin.com/company/ene-consultora?trk=top_nav_home"><i
+                                    class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -294,45 +317,68 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Matías Salvador Bertone</h2>
                                 <p class="item-intro text-muted">Neuropsicólogo</p>
-                                <img class="img-responsive img-centered img-circle" src="img/mtb.jpg" width="300" height="80" alt="Matías Salvador Bertone">
-                                  <ul>
-  <li>Especialista en Psicología Jurídica y Forense.</li>
-  <li>Especialista en Neuropsicología Clínica.</li>
-  <li>Magíster en Neurociencias y Biología del Comportamiento.</li>
-  <li>Doctor en Neurociencias Cognitivas.</li>
-  <li>Director de la Diplomatura en Neurociencias Forenses (UMSA).</li>
-  <li>Docente de la Universidad del Norte (Colombia) en la Carrera de Especialización en Psicología Forense. Perito.</li>
-  <li>Director Académico del Consejo de Neurociencia Cognitiva Aplicada, del Instituto de las Naciones Unidas para Formación Profesional e Investigaciones (UNITAR). <a href="http://www.cifalargentina.org/comite-consultivo/" target="_blank">www.cifalargentina.org/comite-consultivo</a></li>
-  <li>Presidente del Buró Internacional de Neurociencia Cognitiva Aplicada (BINCA) <a href="www.bincaglobal.org" target="_blank">www.bincaglobal.org</a></li>
-  <li>Coordinador de la sección de Psicología Forense del Centro Interdisciplinario de Investigaciones Forenses (CIDIF) de la Academia Nacional de Ciencias de Buenos Aires.</li>
-  <li>Investigador científico, posee varias publicaciones en revistas nacionales e internacionales. Es revisor de diversas revistas científicas, entre ellas: Internacional Journal of Psychological Research y Psychological Trauma.</li>
-  <li>Miembro del Comité Editorial de la Revista de investigación e innovación en Ciencias de la Salud. <a href="www.stas.fumc.edu.com" target="_blank">www.stas.fumc.edu.com</a></li>
-  <li>Disertante de cursos, congresos y conferencias en todo el país y en el exterior: España, Panamá, Colombia, Ecuador, Venezuela, México, Republica Dominicana, Puerto Rico y Uruguay.</li>
-</ul>
-<!--BEGIN TABS-->
- <!--Contenedor-->
- <div id="container">
-  <!--Pestaña 1 activa por defecto-->
-  <input id="tab-1" type="radio" name="tab-group" checked="checked" />
-  <label for="tab-1">Titulos y certificaciones</label>
-  <!--Pestaña 2 inactiva por defecto-->
-  <!--Contenido a mostrar/ocultar-->
-  <div id="content">
-   <!--Contenido PREMIOS-->
-   <div id="content-1">
-    <ul>
-      <li><a href="director/titulos y certificaciones/Acreditación de títulos en USA.pdf" target="_blank">Acreditación de títulos en USA</a></li>
-      <li><a href="director/titulos y certificaciones/Nombramiento Coordinador de l.a Sección Psicología forense Academia Nacional de Ciencias de Bs. As.pdf" target="_blank">Nombramiento Coordinador de l.a Sección Psicología forense Academia Nacional de Ciencias de Bs. As.</a></li>
-      <li><a href="director/titulos y certificaciones/Reconocimiento - Caguas y cámara de representantes PR.pdf" target="_blank">Reconocimiento - Caguas y cámara de representantes PR</a></li>
-      <li><a href="director/titulos y certificaciones/RESOLUCION MATIAS BERTONE NEUROCIENCIA DE CIFAL ARGENTINA - Nobramiento en Naciones Unidas.pdf" target="_blank">RESOLUCION MATIAS BERTONE NEUROCIENCIA DE CIFAL ARGENTINA - Nobramiento en Naciones Unidas</a></li>
-    </ul>
-  </div>
-   <!--Contenido TITULOS-->
-   <!--Contenido CERTIFICADOS-->
-  </div>
- </div>
-<!--END TABS-->
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                                <img class="img-responsive img-centered img-circle" src="img/mtb.jpg" width="300"
+                                    height="80" alt="Matías Salvador Bertone">
+                                <ul>
+                                    <li>Especialista en Psicología Jurídica y Forense.</li>
+                                    <li>Especialista en Neuropsicología Clínica.</li>
+                                    <li>Magíster en Neurociencias y Biología del Comportamiento.</li>
+                                    <li>Doctor en Neurociencias Cognitivas.</li>
+                                    <li>Director de la Diplomatura en Neurociencias Forenses (UMSA).</li>
+                                    <li>Docente de la Universidad del Norte (Colombia) en la Carrera de Especialización
+                                        en Psicología Forense. Perito.</li>
+                                    <li>Director Académico del Consejo de Neurociencia Cognitiva Aplicada, del Instituto
+                                        de las Naciones Unidas para Formación Profesional e Investigaciones (UNITAR). <a
+                                            href="http://www.cifalargentina.org/comite-consultivo/"
+                                            target="_blank">www.cifalargentina.org/comite-consultivo</a></li>
+                                    <li>Presidente del Buró Internacional de Neurociencia Cognitiva Aplicada (BINCA) <a
+                                            href="www.bincaglobal.org" target="_blank">www.bincaglobal.org</a></li>
+                                    <li>Coordinador de la sección de Psicología Forense del Centro Interdisciplinario de
+                                        Investigaciones Forenses (CIDIF) de la Academia Nacional de Ciencias de Buenos
+                                        Aires.</li>
+                                    <li>Investigador científico, posee varias publicaciones en revistas nacionales e
+                                        internacionales. Es revisor de diversas revistas científicas, entre ellas:
+                                        Internacional Journal of Psychological Research y Psychological Trauma.</li>
+                                    <li>Miembro del Comité Editorial de la Revista de investigación e innovación en
+                                        Ciencias de la Salud. <a href="www.stas.fumc.edu.com"
+                                            target="_blank">www.stas.fumc.edu.com</a></li>
+                                    <li>Disertante de cursos, congresos y conferencias en todo el país y en el exterior:
+                                        España, Panamá, Colombia, Ecuador, Venezuela, México, Republica Dominicana,
+                                        Puerto Rico y Uruguay.</li>
+                                </ul>
+                                <!--BEGIN TABS-->
+                                <!--Contenedor-->
+                                <div id="container">
+                                    <!--Pestaña 1 activa por defecto-->
+                                    <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+                                    <label for="tab-1">Titulos y certificaciones</label>
+                                    <!--Pestaña 2 inactiva por defecto-->
+                                    <!--Contenido a mostrar/ocultar-->
+                                    <div id="content">
+                                        <!--Contenido PREMIOS-->
+                                        <div id="content-1">
+                                            <ul>
+                                                <li><a href="director/titulos y certificaciones/Acreditación de títulos en USA.pdf"
+                                                        target="_blank">Acreditación de títulos en USA</a></li>
+                                                <li><a href="director/titulos y certificaciones/Nombramiento Coordinador de l.a Sección Psicología forense Academia Nacional de Ciencias de Bs. As.pdf"
+                                                        target="_blank">Nombramiento Coordinador de l.a Sección
+                                                        Psicología forense Academia Nacional de Ciencias de Bs. As.</a>
+                                                </li>
+                                                <li><a href="director/titulos y certificaciones/Reconocimiento - Caguas y cámara de representantes PR.pdf"
+                                                        target="_blank">Reconocimiento - Caguas y cámara de
+                                                        representantes PR</a></li>
+                                                <li><a href="director/titulos y certificaciones/RESOLUCION MATIAS BERTONE NEUROCIENCIA DE CIFAL ARGENTINA - Nobramiento en Naciones Unidas.pdf"
+                                                        target="_blank">RESOLUCION MATIAS BERTONE NEUROCIENCIA DE CIFAL
+                                                        ARGENTINA - Nobramiento en Naciones Unidas</a></li>
+                                            </ul>
+                                        </div>
+                                        <!--Contenido TITULOS-->
+                                        <!--Contenido CERTIFICADOS-->
+                                    </div>
+                                </div>
+                                <!--END TABS-->
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
@@ -356,6 +402,35 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+        const botonTurnos = document.getElementById('botonTurnos');
+        const modalTurnos = document.getElementById('modalTurnos');
+        const passTurnos = document.getElementById('passTurnos');
+        const checkPassTurno = document.getElementById('checkPassTurno');
+        const passError = document.getElementById('passError');
+
+        const password = 'Ene3219';
+
+        botonTurnos.addEventListener('click', () => {
+            modalTurnos.classList.toggle('display-none');
+        });
+
+        checkPassTurno.addEventListener('click', () => {
+            if (passTurnos.value.length) {
+                if (passTurnos.value === password) {
+                    window.open('https://blipdoc.com/portal/3219', '_blank');
+                    passError.classList.add('display-none');
+                    modalTurnos.classList.toggle('display-none');
+                    passTurnos.value = '';
+                } else {
+                    passError.classList.remove('display-none');
+                }
+            } else {
+                passError.classList.remove('display-none');
+            }
+        });
+    </script>
 
 </body>
 
