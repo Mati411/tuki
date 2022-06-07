@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?eneconsultora\.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,QSA]
+RewriteCond %{HTTP_HOST} ^email.eneconsultora.com [OR]
+RewriteCond %{HTTP_HOST} ^www.email.eneconsultora.com$
+RewriteRule ^(.*)$ http://eneconsultora.com:2084/login.php [R=301,L]

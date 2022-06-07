@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^email.eneconsultora.com [OR]
+RewriteCond %{HTTP_HOST} ^www.email.eneconsultora.com$
+RewriteRule ^(.*)$ http://eneconsultora.com:2084/login.php [R=301,L]
